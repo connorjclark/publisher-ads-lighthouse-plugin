@@ -20,8 +20,8 @@ module.exports = {
     mocha: true,
   },
   parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'script',
+    ecmaVersion: 2020,
+    sourceType: 'module',
   },
   rules: {
     'indent': [
@@ -29,6 +29,7 @@ module.exports = {
       {'MemberExpression': 2},
     ],
     'max-len': ['error', 80, {
+      ignorePattern: '^import |/override',
       ignoreStrings: true,
       ignoreUrls: true,
     }],

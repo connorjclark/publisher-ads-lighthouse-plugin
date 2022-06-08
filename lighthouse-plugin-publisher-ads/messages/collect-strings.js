@@ -18,9 +18,10 @@
 
 /* eslint-disable no-console, max-len */
 
-const esprima = require('esprima');
-const fs = require('fs');
-const path = require('path');
+import esprima from 'esprima';
+
+import fs from 'fs';
+import path from 'path';
 
 const LH_ROOT = path.join(__dirname, '../');
 const UISTRINGS_REGEX = /UIStrings = (.|\s)*?\};\n/im;
